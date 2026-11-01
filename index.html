@@ -1,48 +1,288 @@
-<section class="section-wrap section" id="projects">
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090711">
+  <meta name="description" content="Hackhive is an independent student technology team building practical digital projects.">
+  <meta name="keywords" content="Hackhive, student developers, technology team, web projects">
+  <meta name="author" content="Hackhive">
+
+  <meta property="og:title" content="Hackhive — Beyond Code, Beyond Limits">
+  <meta property="og:description" content="Meet the team, explore our projects and follow what we build.">
+  <meta property="og:type" content="website">
+
+  <title>Hackhive — Beyond Code, Beyond Limits</title>
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="ambient ambient-one"></div>
+<div class="ambient ambient-two"></div>
+
+<header class="site-header">
+
+  <a class="brand" href="#home">
+    <span class="brand-mark">H<span>+</span></span>
+    <span>HACKHIVE</span>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+  <nav id="navMenu">
+    <a href="#about">About</a>
+    <a href="#team">Our Team</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact" class="nav-cta">Connect ↗</a>
+  </nav>
+
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero section-wrap" id="home">
+
+  <div class="hero-copy">
+
+    <div class="eyebrow">
+      <span class="pulse"></span>
+      STUDENT-LED TECHNOLOGY TEAM
+    </div>
+
+    <h1>Beyond Code,<br><span>Beyond Limits.</span></h1>
+
+    <p class="hero-text">
+      We are Hackhive — a team of curious minds turning ideas into practical digital experiences through code, creativity and collaboration.
+    </p>
+
+    <div class="hero-actions">
+      <a class="button button-primary" href="#projects">Explore our work ↗</a>
+      <a class="button button-ghost" href="#team">Meet the team</a>
+    </div>
+
+    <div class="hero-note">
+      <span class="tiny-dot"></span>
+      Curious minds. Shared ideas. Real projects.
+    </div>
+
+  </div>
+
+  <div class="hero-art">
+
+    <div class="orbit orbit-a"></div>
+    <div class="orbit orbit-b"></div>
+
+    <div class="core">
+      <span>H</span>
+      <small>HACKHIVE</small>
+    </div>
+
+    <div class="float-card card-code">
+      <span class="card-icon">⌘</span>
+      <div><b>BUILD</b><small>Ideas into reality</small></div>
+    </div>
+
+    <div class="float-card card-team">
+      <span class="card-icon">✳</span>
+      <div><b>CREATE</b><small>Better together</small></div>
+    </div>
+
+    <div class="art-grid"></div>
+
+  </div>
+
+</section>
+
+<!-- INTRO -->
+
+<section class="intro-strip">
+  <div><strong>01</strong><span>Think differently</span></div>
+  <div><strong>02</strong><span>Build with purpose</span></div>
+  <div><strong>03</strong><span>Keep improving</span></div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="section-wrap section" id="about">
+
   <div class="section-heading">
+
+    <div>
+      <div class="eyebrow">WHO WE ARE</div>
+      <h2>Ideas are just the <span>beginning.</span></h2>
+    </div>
+
+    <p>
+      Hackhive is an independent student technology team focused on learning by building. We explore concepts, develop projects and improve them through feedback and testing.
+    </p>
+
+  </div>
+
+  <div class="about-grid">
+
+    <article class="about-card about-main">
+      <div class="line-icon">✦</div>
+      <h3>Our approach</h3>
+      <p>We believe good projects come from asking better questions, sharing different perspectives and being willing to iterate.</p>
+    </article>
+
+    <article class="about-card">
+      <div class="line-icon">⌘</div>
+      <h3>What we do</h3>
+      <p>We experiment with software, web experiences and practical solutions to everyday problems.</p>
+    </article>
+
+    <article class="about-card">
+      <div class="line-icon">↗</div>
+      <h3>What drives us</h3>
+      <p>Curiosity, teamwork and the motivation to turn a small idea into something people can try.</p>
+    </article>
+
+  </div>
+
+</section>
+
+<!-- TEAM -->
+
+<section class="section-wrap section" id="team">
+
+  <div class="section-heading">
+
+    <div>
+      <div class="eyebrow">THE PEOPLE BEHIND THE IDEAS</div>
+      <h2>Meet the <span>team.</span></h2>
+    </div>
+
+    <p>Four people, different strengths, one shared space to learn, create and build.</p>
+
+  </div>
+
+  <div class="team-grid">
+
+    <article class="team-card leader-card">
+      <div class="avatar avatar-purple">GS</div>
+      <div class="member-number">01 / LEADERSHIP</div>
+      <h3>Gourav Singh</h3>
+      <p class="role">Team Leader</p>
+      <p class="member-desc">Guiding the team, coordinating ideas and keeping projects moving forward.</p>
+    </article>
+
+    <article class="team-card">
+      <div class="avatar avatar-blue">AS</div>
+      <div class="member-number">02 / QUALITY</div>
+      <h3>Aditya Singh</h3>
+      <p class="role">QA Tester</p>
+      <p class="member-desc">Testing project flows, checking behaviour and helping improve quality.</p>
+    </article>
+
+    <article class="team-card">
+      <div class="avatar avatar-pink">PD</div>
+      <div class="member-number">03 / IDEAS</div>
+      <h3>Praduman Dubey</h3>
+      <p class="role">Suggester</p>
+      <p class="member-desc">Contributing suggestions and fresh perspectives during project development.</p>
+    </article>
+
+    <article class="team-card">
+      <div class="avatar avatar-cyan">RS</div>
+      <div class="member-number">04 / DESIGN</div>
+      <h3>Rishika Shrivastav</h3>
+      <p class="role">Designer</p>
+      <p class="member-desc">Shaping visual ideas and helping make project experiences clear and engaging.</p>
+    </article>
+
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section class="section-wrap section" id="projects">
+
+  <div class="section-heading">
+
     <div>
       <div class="eyebrow">SELECTED WORK</div>
       <h2>Things we've <span>built.</span></h2>
     </div>
+
     <p>A growing collection of experiments and projects from the Hackhive team.</p>
+
   </div>
 
-  <!-- PROJECT 1 -->
+  <!-- PROJECT 1: SNAKE SCISSOR STONE -->
+
   <article class="project-card">
+
     <div class="project-visual">
+
       <div class="game-window">
+
         <div class="window-top">
           <i></i><i></i><i></i>
           <span>HACKHIVE / GAME</span>
         </div>
 
-        <div class="game-title">SNAKE <b>×</b> SCISSOR <b>×</b> STONE</div>
-        <div class="game-symbols">
-          <span>✊</span><span>✌</span><span>✋</span>
+        <div class="game-title">
+          SNAKE <b>×</b> SCISSOR <b>×</b> STONE
         </div>
+
+        <div class="game-symbols">
+          <span>✊</span>
+          <span>✌</span>
+          <span>✋</span>
+        </div>
+
         <div class="game-caption">CHOOSE YOUR MOVE</div>
+
       </div>
+
     </div>
 
     <div class="project-info">
+
       <div class="project-label">WEB GAME · JAVASCRIPT</div>
+
       <h3>Snake–Scissor–Stone</h3>
-      <p>A browser-based take on the classic hand game, built with HTML, CSS and JavaScript. Play a quick round and challenge the computer.</p>
+
+      <p>
+        A browser-based take on the classic hand game, built with HTML, CSS and JavaScript. Play a quick round and challenge the computer.
+      </p>
 
       <div class="tag-row">
-        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
       </div>
 
       <a class="text-link" href="https://snakestone.netlify.app/" target="_blank" rel="noopener noreferrer">
         Play the game <span>↗</span>
       </a>
+
     </div>
+
   </article>
 
-  <!-- PROJECT 2 -->
+  <!-- PROJECT 2: FUTURE SITUATION SIMULATOR -->
+
   <article class="project-card">
+
     <div class="project-visual simulator-visual">
+
       <div class="simulator-window">
+
         <div class="window-top">
           <i></i><i></i><i></i>
           <span>HACKHIVE / SIMULATOR</span>
@@ -54,23 +294,40 @@
         </div>
 
         <div class="simulator-map">
+
           <div class="map-zone zone-low">LOW</div>
           <div class="map-zone zone-medium">MEDIUM</div>
           <div class="map-zone zone-high">HIGH</div>
-          <div class="map-path"></div>
+
         </div>
 
         <div class="simulator-stats">
-          <div><span>CROWD LEVEL</span><b>ANALYSIS</b></div>
-          <div><span>RISK STATUS</span><b>MONITORING</b></div>
+
+          <div>
+            <span>CROWD LEVEL</span>
+            <b>ANALYSIS</b>
+          </div>
+
+          <div>
+            <span>RISK STATUS</span>
+            <b>MONITORING</b>
+          </div>
+
         </div>
+
       </div>
+
     </div>
 
     <div class="project-info">
+
       <div class="project-label">WEB APP · CROWD SIMULATION</div>
+
       <h3>Future Situation Simulator</h3>
-      <p>A crowd simulation system that helps users visualize future crowd situations, identify potential risks and plan preventive actions before problems occur.</p>
+
+      <p>
+        A crowd simulation system that helps users visualize future crowd situations, identify potential risks and plan preventive actions before problems occur.
+      </p>
 
       <div class="tag-row">
         <span>HTML</span>
@@ -83,8 +340,66 @@
       <a class="text-link" href="https://futuresitutationsimulator.netlify.app/" target="_blank" rel="noopener noreferrer">
         View Project <span>↗</span>
       </a>
+
     </div>
+
   </article>
 
-  <p class="project-footnote">More projects will be added here as the team builds and publishes them.</p>
+  <p class="project-footnote">
+    More projects will be added here as the team builds and publishes them.
+  </p>
+
 </section>
+
+<!-- CONTACT -->
+
+<section class="contact-section" id="contact">
+
+  <div class="section-wrap contact-inner">
+
+    <div>
+      <div class="eyebrow">LET'S CONNECT</div>
+      <h2>Have an idea?<br><span>Let's build it.</span></h2>
+      <p>Explore our work or find us on GitHub.</p>
+    </div>
+
+    <div class="contact-actions">
+
+      <a class="button button-primary" href="https://github.com/gk0613" target="_blank" rel="noopener noreferrer">
+        GitHub profile ↗
+      </a>
+
+      <a class="button button-ghost" href="https://snakestone.netlify.app/" target="_blank" rel="noopener noreferrer">
+        Try our project ↗
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer class="site-footer">
+
+  <a class="brand" href="#home">
+    <span class="brand-mark">H<span>+</span></span>
+    <span>HACKHIVE</span>
+  </a>
+
+  <p>Beyond Code, Beyond Limits.</p>
+
+  <span class="copyright">
+    © <span id="year"></span> Hackhive. Built with curiosity.
+  </span>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
